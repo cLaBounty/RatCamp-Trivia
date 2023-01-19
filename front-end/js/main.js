@@ -38,6 +38,12 @@ const setUsername = (name) => {
 }
 
 $(document).ready(function() {
+
+  $('#login-button').on('click', function () { login() });
+  $('#signup-button').on('click', function () { signup() });
+  $('.send-btn').on('click', function () { sendMessage() });
+  $('#public-room-button').on('click', function () { toPublicRoom() });
+
   // auto resize message text area
   $(document).on('input', 'textarea', function() {
     $(this).outerHeight('34px').outerHeight(this.scrollHeight);

@@ -37,7 +37,7 @@
             </div>
             <div class="typing-area">
                 <textarea name="Message" type="text" spellcheck="true" placeholder="Message" id="message-input"></textarea>
-                <button type="button" class="send-btn" onclick="sendMessage()">Send</button>
+                <button type="button" class="send-btn">Send</button>
             </div>
         </div>
         <div class="online-users-box">
@@ -45,7 +45,7 @@
                 <h1 class="online-users-title">Online Users</h1>
             </div>
             <div id="online-users">
-                <div class="online-user-block current-room-list" onclick="toPublicRoom()">
+                <div id="public-room-button" class="online-user-block current-room-list">
                     <li class="online-user">Public Chat Room</li>
                     <p id="public-notifications" class="notification">0</p>
                 </div>
