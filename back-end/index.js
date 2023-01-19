@@ -3,7 +3,7 @@ const router = app => {
 
     // Serve clients with homepage
     app.get('/', (request, response) => {
-        response.sendFile(__dirname + "/front-end/html/dashboard.html");
+        response.sendFile(__dirname + "index.html");
     });
 
     // Serve clients with message board
